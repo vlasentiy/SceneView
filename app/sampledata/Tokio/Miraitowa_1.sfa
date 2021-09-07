@@ -1,0 +1,120 @@
+{
+  animations: [
+    {
+      clips: [
+        {
+          name: 'Take 001',
+          runtime_name: 'Miraitowa_1',
+        },
+      ],
+      path: 'sampledata/Tokio/Miraitowa_1.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'miraitowa_m',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'miraitowa_C',
+        },
+        {
+          normalMap: 'miraitowa_N',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'lambert2',
+      parameters: [
+        {
+          baseColor: [
+            0.5,
+            0.5,
+            0.5,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/Tokio/Miraitowa_1.fbx',
+    name: 'Miraitowa_1',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/Tokio/miraitowa_C.png',
+      name: 'miraitowa_C',
+      pipeline_name: '..\\..\\..\\sourceimages\\miraitowa_C.png',
+    },
+    {
+      file: 'sampledata/Tokio/miraitowa_N.png',
+      name: 'miraitowa_N',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: '..\\..\\..\\sourceimages\\miraitowa_N.png',
+    },
+  ],
+  version: '0.54:2',
+}
